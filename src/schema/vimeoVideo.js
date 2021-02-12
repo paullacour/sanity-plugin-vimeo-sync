@@ -30,13 +30,13 @@ export default {
     {
       title: "Modified time",
       name: "modifiedTime",
-      type: "date",
+      type: "datetime",
       readOnly: true
     },
     {
       title: "Created time",
       name: "createdTime",
-      type: "date",
+      type: "datetime",
       readOnly: true,
     },
     {
