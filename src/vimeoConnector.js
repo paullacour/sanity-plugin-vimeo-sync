@@ -54,8 +54,8 @@ const getVideos = (pluginOptions = {}) => {
                   height: video.height,
                   aspectRatio: video.width / video.height,
                   description: video.description ? video.description : '',
-                  files: hasVideoFiles ? video.files.map((f, i) => Object.assign(f, {_key: i})) : false,
-                  pictures: video.pictures.sizes.map((p, i) => Object.assign(p, {_key: i})),
+                  files: hasVideoFiles ? video.files.map((f, i) => Object.assign(f, {_key: 'file-'+i})) : false,
+                  pictures: video.pictures.sizes.map((p, i) => Object.assign(p, {_key: 'picture-'+i})),
                   link: video.link,
                   duration: video.duration
               }
