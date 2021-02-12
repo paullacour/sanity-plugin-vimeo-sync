@@ -1,6 +1,7 @@
 import sanityClient from 'part:@sanity/base/client'
 import Axios from "axios";
 import speakingurl from 'speakingurl'
+import { nanoid } from 'nanoid'
 import PropTypes from 'prop-types'
 
 const getVideos = (pluginOptions = {}) => {
@@ -54,8 +55,8 @@ const getVideos = (pluginOptions = {}) => {
                   height: video.height,
                   aspectRatio: video.width / video.height,
                   description: video.description ? video.description : '',
-                  files: hasVideoFiles ? video.files.map((f, i) => Object.assign(f, {_key: 'file-'+i})) : false,
-                  pictures: video.pictures.sizes.map((p, i) => Object.assign(p, {_key: 'picture-'+i})),
+                  files: hasVideoFiles ? video.files.map((f, i) => Object.assign(f, {_key: nanoid()})) : false,
+                  pictures: video.pictures.sizes.map((p, i) => Object.assign(p, {_key: nanoid()})),
                   link: video.link,
                   duration: video.duration
               }
