@@ -1,10 +1,10 @@
 {
   "public": true,
-  "name": "sanity-plugin-dashboard-widget-vimeo-sync",
+  "name": "sanity-plugin-vimeo-sync",
   "version": "0.0.1",
   "author": "Tristan Bagot",
-  "description": "Example dashboard widget for Sanity Content Studio",
-  "homepage": "https://github.com/tristantbg/dashboard-widget-vimeo-sync#readme",
+  "description": "Vimeo Sync to Sanity Content Studio",
+  "homepage": "https://github.com/tristantbg/sanity-plugin-vimeo-sync#readme",
   "keywords": [
     "sanity",
     "plugin",
@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tristantbg/dashboard-widget-vimeo-sync/issues"
+    "url": "https://github.com/tristantbg/sanity-plugin-vimeo-sync/issues"
   },
   "scripts": {
     "build": "babel src -d lib --copy-files",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tristantbg/dashboard-widget-vimeo-sync.git"
+    "url": "git+https://github.com/tristantbg/sanity-plugin-vimeo-sync.git"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
